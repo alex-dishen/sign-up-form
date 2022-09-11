@@ -18,20 +18,19 @@ body {
     flex-direction: column;
 }
 
-/* HEAD */
-
-header > img {
-    height: 100vh;
-    /* width: min(100%, 500px); */
-}
-
-.logo {
-    height: 200px;
-}
-
 /* MAIN */
 
-main {}
+main {
+    display: flex;
+}
+
+.left-side {
+    width: 640px;
+}
+
+.left-side img {
+    height: 200px;
+}
 
 /* FOOTER */
 
