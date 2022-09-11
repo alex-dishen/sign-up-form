@@ -25,11 +25,27 @@ main {
 }
 
 .left-side {
-    width: 640px;
+    position: relative;
+    width: 600px;
+    height: 100vh;
+    border: 1px solid black;
 }
 
-.left-side img {
-    height: 200px;
+.picture {
+    height: 300px;
+    border: 1px solid;
+}
+
+.left-side > div {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+}
+
+.logo {
+    height: 90px;
 }
 
 /* FOOTER */
