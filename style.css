@@ -20,7 +20,14 @@ body {
 
 /* HEAD */
 
-header {}
+header > img {
+    height: 100vh;
+    /* width: min(100%, 500px); */
+}
+
+.logo {
+    height: 200px;
+}
 
 /* MAIN */
 
