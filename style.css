@@ -1,0 +1,51 @@
+:root {}
+
+body {
+    font-family:
+    system-ui,
+    -apple-system, /* Firefox supports this but not yet `system-ui` */
+    'Segoe UI',
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji';
+    background-color: white;
+    color: black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* HEAD */
+
+header {}
+
+/* MAIN */
+
+main {}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    padding-bottom: 22px;
+    margin-top: 40px;
+}
+
+.github {
+    height: 22px;
+    margin-left: 6px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.github:hover {
+    transform: rotate(360deg) scale(1.2);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 0px) {}
