@@ -48,11 +48,11 @@ main {
 
 .right-side {
     position: relative;
-    height: 500px;
+    height: 510px;
     width: 390px;
     left: 50px;
     top: 50px;
-    padding: 16px 45px 0 45px;
+    padding: 0 45px 0 45px;
     border: 1px solid rgb(127, 112, 245);
     border-radius: 7px;
     box-shadow: inset 4px 4px 23px rgb(32, 20, 68), inset -4px -4px 23px rgb(32, 20, 68);
@@ -60,9 +60,11 @@ main {
 
 h2 {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 form > div {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 4px;
@@ -92,6 +94,28 @@ input::placeholder {
 input:focus {
     border-image-source: linear-gradient(90deg, rgba(127,112,245,0.75) 24%, rgba(127,112,245,0.55) 55%, rgba(127,112,245,0.45) 86%);
     border-width: 1.5px;
+}
+
+.eye {
+    position: absolute;
+    height: 16px;
+    top: 2px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.button-container {
+    align-items: center;
+}
+
+button {
+    background-color: rgb(99, 26, 240);
+    cursor: pointer;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 7px;
+    width: 170px;
 }
 
 /* FOOTER */

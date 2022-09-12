@@ -24,7 +24,7 @@
         <div class="right-side">
             <h2>Lets start creating</h2>
 
-            <form action="" method="post">
+            <form method="post">
 
                 <div>
                     <label for="name">*Name</label>
@@ -40,16 +40,16 @@
                 </div>
                 <div>
                     <label for="pswd">*Password</label>
-                    <input type="password" name="password" id="pswd" required>
+                    <input type="password" name="password" id="pswd" minlength="6" required>
+                    <img src="img/closed_eye.png" class="eye">
                 </div>
                 <div>
                     <label for="rp_pswd">*Confirm Password</label>
                     <input type="password" name="password" id="rp_pswd" required>
+                    <img src="img/closed_eye.png" class="eye">
                 </div>
-                <button>Create Account</button>
+                <div class="button-container"><button>Sign Me Up</button></div>
             </form>
-
-            <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </main>
     
