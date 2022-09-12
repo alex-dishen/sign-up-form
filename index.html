@@ -11,13 +11,14 @@
     <title>Sign-up</title>
 </head>
 <body>
+    <header>
+        <img src="img/deer.png" alt="logo" class="logo">
+        <h1>PurpleSky</h1>
+    </header>
+
     <main>
         <div class="left-side">
             <img src="img/experience.png" alt="creating picture" class="picture">
-            <div>
-                <img src="img/deer.png" alt="logo" class="logo">
-                <h1>Neon Bliss</h1>
-            </div>
         </div>
 
         <div class="right-side">
@@ -25,19 +26,14 @@
                 <p>You know you need something like this in your life to help
                     you realize your deepest dreams and create the future?<br>
                     Sign up now to start creating.</p>
-                <p>You know you want to!</p>
             </div>
 
             <form action="" method="post">
                 <h2>Let's do this!</h2>
 
                 <div>
-                    <label for="name">First Name</label>
-                    <input type="text" name="first-name" id="name" required>
-                </div>
-                <div>
-                    <label for="surname">Last Name</label>
-                    <input type="text" name="last-name" id="surname" required>
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
                 </div>
                 <div>
                     <label for="email">E-mail</label>
@@ -64,7 +60,11 @@
         </div>
     </main>
     
-    <footer>Copyright © 2022 alex-dishen
+    <footer>Copyright © 
+        <script>
+            document.write(new Date().getFullYear())
+          </script>
+        alex-dishen
         <a href="https://github.com/alex-dishen" target="_blank"><img src="./img/github.png" class="github"></a>
     </footer>
 </body>
