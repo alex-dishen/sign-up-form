@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>Sign-up</title>
+    <title>PurpleSky</title>
 </head>
 <body>
     <header>
@@ -22,41 +22,34 @@
         </div>
 
         <div class="right-side">
-            <div class="intro">
-                <p>You know you need something like this in your life to help
-                    you realize your deepest dreams and create the future?<br>
-                    Sign up now to start creating.</p>
-            </div>
+            <h2>Lets start creating</h2>
 
             <form action="" method="post">
-                <h2>Let's do this!</h2>
 
                 <div>
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" required>
+                    <label for="name">*Name</label>
+                    <input type="text" name="name" id="name" placeholder="Alex" required>
                 </div>
                 <div>
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email" required>
+                    <label for="email">*E-mail</label>
+                    <input type="email" name="email" id="email" placeholder="example@gmailc.om" required>
                 </div>
                 <div>
                     <label for="number">Phone Number</label>
-                    <input type="tel" name="number" id="number">
+                    <input type="tel" name="number" id="number" placeholder="+380">
                 </div>
                 <div>
-                    <label for="pswd">Password</label>
+                    <label for="pswd">*Password</label>
                     <input type="password" name="password" id="pswd" required>
                 </div>
                 <div>
-                    <label for="rp_pswd">Confirm Password</label>
+                    <label for="rp_pswd">*Confirm Password</label>
                     <input type="password" name="password" id="rp_pswd" required>
                 </div>
+                <button>Create Account</button>
             </form>
 
-            <div>
-                <button>Create Account</button>
-                <p>Already have an account? <a href="">Log in</a></p>
-            </div>
+            <p>Already have an account? <a href="">Log in</a></p>
         </div>
     </main>
     

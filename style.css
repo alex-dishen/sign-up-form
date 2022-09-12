@@ -1,24 +1,12 @@
-:root {
-    --font-color: white;
-}
-
 body {
     height: 100vh;
     display: flex;
     flex-direction: column;
 
-    font-family:
-    system-ui,
-    -apple-system,
-    'Segoe UI',
-    Roboto,
-    Helvetica,
-    Arial,
-    sans-serif,
-    'Apple Color Emoji',
-    'Segoe UI Emoji';
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, 
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
 
-    color: var(--font-color);
+    color: white;
     background-color: rgb(21, 21, 35);
 }
 
@@ -49,32 +37,61 @@ main {
 
 .left-side {
     display: flex;
-    align-items: center;
-    justify-content: center;
     width: 800px;
-    height: 100vh;
-    /* border: 1px solid white; */
-    position: relative;
-    border: 1px solid;
 }
 
 .picture {
-    height: 100%;
-    /* border: 1px solid; */
+    position: relative;
+    height: max(74vh, 580px);
+    left: 15vw;
 }
 
 .right-side {
-    border: 1px solid;
-    width: 350px;
-    height: 450px;
     position: relative;
+    height: 500px;
+    width: 390px;
     left: 50px;
     top: 50px;
+    padding: 16px 45px 0 45px;
+    border: 1px solid rgb(127, 112, 245);
+    border-radius: 7px;
+    box-shadow: inset 4px 4px 23px rgb(32, 20, 68), inset -4px -4px 23px rgb(32, 20, 68);
+}
+
+h2 {
+    text-align: center;
 }
 
 form > div {
     display: flex;
     flex-direction: column;
+    gap: 4px;
+}
+
+form > div + div {
+    margin-top: 20px;
+}
+
+input {
+    height: 28px;
+    outline: none;
+    border: hidden;
+    border-bottom: groove;
+    border-image-slice: 1;
+    border-width: 1px;
+
+    background-color: inherit;
+    color: white;
+    border-image-source: linear-gradient(90deg, rgba(121,116,166,0.6) 24%, rgba(121,116,166,0.45) 55%, rgba(121,116,166,0.3) 86%);
+}
+
+input::placeholder {
+    color: rgba(121,116,166,0.4);
+}
+
+input:focus {
+    border-image-source: linear-gradient(90deg, rgba(127,112,245,0.75) 24%, rgba(127,112,245,0.55) 55%, rgba(127,112,245,0.45) 86%);
+    border-width: 1.5px;
 }
 
 /* FOOTER */
