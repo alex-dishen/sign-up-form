@@ -23,31 +23,40 @@
 
         <div class="right-side">
             <h2>Lets start creating</h2>
-
+            
             <form method="post">
-
                 <div>
                     <label for="name">*Name</label>
-                    <input type="text" name="name" id="name" placeholder="Alex" required>
+                    <input type="text" name="name" id="name" placeholder="Alex"
+                           autocomplete="off" required>
                 </div>
                 <div>
                     <label for="email">*E-mail</label>
-                    <input type="email" name="email" id="email" placeholder="example@gmailc.om" required>
+                    <input type="email" name="email" id="email"
+                           placeholder="example@gmail.com"
+                           autocomplete="off" required>
                 </div>
                 <div>
                     <label for="number">Phone Number</label>
-                    <input type="tel" name="number" id="number" placeholder="+380">
+                    <input type="tel" name="number" id="number"
+                           placeholder="+380" autocomplete="off"
+                           required pattern='[+]{1}[0-9]{12,}'>
                 </div>
                 <div>
                     <label for="pswd">*Password</label>
-                    <input type="password" name="password" id="pswd" minlength="6" required>
+                    <input type="password" name="password" id="pswd"
+                           placeholder="At least 8 characters with 1 capital letter"
+                           pattern='(?=.*[A-Z]).{8,}' required>
                     <img src="img/closed_eye.png" class="eye">
                 </div>
                 <div>
                     <label for="rp_pswd">*Confirm Password</label>
-                    <input type="password" name="password" id="rp_pswd" minlength="6" required>
+                    <input type="password" name="password" id="rp_pswd"
+                           minlength="6" required>
                 </div>
-                <div class="button-container"><button>Sign Me Up</button></div>
+                <div class="button-container">
+                    <button>Sign Me Up</button>
+                </div>
             </form>
         </div>
     </main>

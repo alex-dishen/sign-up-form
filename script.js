@@ -1,5 +1,7 @@
 const password = document.getElementById('pswd');
 const passwordEye = document.querySelector('.eye');
+const confirmPassword = document.getElementById('rp_pswd');
+const submitButton = document.querySelector('button');
 
 function showAndHidePassword() {
     if(password.type === 'password') {
@@ -17,7 +19,19 @@ function changeEye() {
     }
 }
 
+function checkPasswords() {
+    if(password.value !== confirmPassword.value) {
+        password.setCustomValidity("Invalid password");
+        confirmPassword.setCustomValidity("Invalid password")
+    } else {
+        password.setCustomValidity("");
+        confirmPassword.setCustomValidity("")
+    }
+}
+
 passwordEye.addEventListener('click', () => {
     changeEye();
     showAndHidePassword();
 });
+
+confirmPassword.addEventListener('input', checkPasswords)
