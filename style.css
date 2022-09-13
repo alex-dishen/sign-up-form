@@ -24,7 +24,8 @@ body {
 header {
     display: flex;
     align-items: flex-end;
-    margin: 17px 0px 10px 30px;
+    justify-content: center;
+    margin: 17px 0px 20px 30px;
 }
 
 .logo {
@@ -44,6 +45,8 @@ main {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    padding: 0 7px 0 7px;
 }
 
 .picture {
@@ -133,7 +136,7 @@ footer {
     padding: 10px;
     font-size: 18px;
     padding-bottom: 22px;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 .github {
@@ -148,4 +151,49 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 0px) {}
+@media (max-width: 920px) {
+
+    .logo {
+        height: 50px;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+
+    .picture {
+        height: 435px;
+    }
+
+    .form-container {
+        height: 460px;
+        width: 291px;
+    }
+
+    .form-container {
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    button {
+        width: 100px;
+        padding: 9px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 655px) {
+    header {
+        justify-content: center;
+    }
+
+    .picture {
+        margin: 30px 0;
+    }
+}
