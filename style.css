@@ -1,3 +1,12 @@
+:root {
+    --invalid-color: linear-gradient(90deg, rgba(209,0,0,0.6) 24%,
+    rgba(209,0,0,0.45) 55%, rgba(209,0,0,0.3) 86%);
+    --valid-color: linear-gradient(90deg, rgba(127,112,245,0.75) 24%,
+    rgba(127,112,245,0.55) 55%, rgba(127,112,245,0.45) 86%);
+    --input-border-color: linear-gradient(90deg, rgba(121,116,166,0.6) 24%,
+    rgba(121,116,166,0.45) 55%, rgba(121,116,166,0.3) 86%);
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -31,28 +40,22 @@ h1 {
 /* MAIN */
 
 main {
-    display: flex;
     flex: 1;
-}
-
-.left-side {
     display: flex;
-    width: 800px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .picture {
-    position: relative;
-    height: max(74vh, 580px);
-    left: 15vw;
+    height: 575px;
 }
 
-.right-side {
-    position: relative;
+.form-container {
+    flex-shrink: 0;
     height: 510px;
     width: 390px;
-    left: 50px;
-    top: 50px;
     padding: 0 45px 0 45px;
+
     border: 1px solid rgb(127, 112, 245);
     border-radius: 7px;
     box-shadow: inset 4px 4px 23px rgb(32, 20, 68), 
@@ -61,7 +64,7 @@ main {
 
 h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin: 25px 0 30px 0;
 }
 
 form > div {
@@ -85,8 +88,7 @@ input {
 
     background-color: inherit;
     color: white;
-    border-image-source: linear-gradient(90deg, rgba(121,116,166,0.6) 24%,
-                        rgba(121,116,166,0.45) 55%, rgba(121,116,166,0.3) 86%);
+    border-image-source: var(--input-border-color);
 }
 
 input::placeholder {
@@ -94,14 +96,12 @@ input::placeholder {
 }
 
 input:valid {
-    border-image-source: linear-gradient(90deg, rgba(127,112,245,0.75) 24%,
-                        rgba(127,112,245,0.55) 55%, rgba(127,112,245,0.45) 86%);
+    border-image-source: var(--valid-color);
     border-width: 1.5px;
 }
 
 input:invalid:focus {
-    border-image-source: linear-gradient(90deg, rgba(209,0,0,0.6) 24%,
-                        rgba(209,0,0,0.45) 55%, rgba(209,0,0,0.3) 86%);
+    border-image-source: var(--invalid-color);
 }
 
 .eye {
@@ -117,13 +117,13 @@ input:invalid:focus {
 }
 
 button {
+    width: 170px;
     background-color: rgb(99, 26, 240);
-    cursor: pointer;
     color: white;
+    cursor: pointer;
     padding: 14px;
     border: none;
     border-radius: 7px;
-    width: 170px;
 }
 
 /* FOOTER */
