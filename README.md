@@ -2,7 +2,7 @@
 
 Sign-up Form is created with HTML, CSS and JS.
 
-![Preview]()
+![Preview](img/form.png)
 
 ## Links
 - [Live App](https://alex-dishen.github.io/sign-up-form/) :point_left:
