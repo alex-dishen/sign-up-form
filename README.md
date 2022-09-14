@@ -1,4 +1,4 @@
-# Calculator
+# Sign-up Form
 
 Sign-up Form is created with HTML, CSS and JS.
 
