@@ -166,21 +166,22 @@ footer {
     }
 
     .form-container {
-        height: 460px;
+        height: 465px;
         width: 291px;
     }
 
     .form-container {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     h2 {
-        font-size: 18px;
+        font-size: 20px;
+        margin-top: 16px;
     }
 
     button {
         width: 100px;
-        padding: 9px;
+        padding: 10px;
     }
 
     footer {
