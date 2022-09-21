@@ -7,3 +7,4 @@ Sign-up Form is created with HTML, CSS and JS.
 ## Links
 - [Live App](https://alex-dishen.github.io/sign-up-form/) :point_left:
 - Link to the [Assignment](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)
+- See my next [Project](https://github.com/alex-dishen/admin-dashboard)
