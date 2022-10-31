@@ -1,5 +1,5 @@
 # Sign-up Form
-The **Sign-up Form** game is created according to the assignment from **The Odin Project** [course](https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css).
+The **Sign-up Form** is created according to the assignment from **The Odin Project** [course](https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css).
 <br>
 <br>
 
