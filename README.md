@@ -1,10 +1,22 @@
 # Sign-up Form
+The **Sign-up Form** game is created according to the assignment from **The Odin Project** [course](https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css).
+<br>
+<br>
 
-Sign-up Form is created with HTML, CSS and JS.
+![Preview](img/sign-up-form.png)
 
-![Preview](img/form.png)
+### 🔗 **Live preview** of the project is [here](https://alex-dishen.github.io/sign-up-form/).
 
-## Links
-- [Live App](https://alex-dishen.github.io/sign-up-form/) :point_left:
-- Link to the [Assignment](https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form)
-- See my next [Project](https://github.com/alex-dishen/admin-dashboard)
+## **Features**
+* Ability to see the password
+
+## **Outcome**
+* Used **HTML**
+* Used **CSS**
+* Used **JavaScript**
+* Learned how to use Forms and there validation
+* Improved skill for building responsive designs
+
+## **Navigation**
+* See my next [Project](https://github.com/alex-dishen/admin-dashboard)
+* See my previous [Project](https://github.com/alex-dishen/calculator)
